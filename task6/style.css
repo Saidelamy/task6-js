@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.traffic-light {
+  width: 100px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  margin: 15px auto;
+  border-radius: 50%;
+  background-color: #444;
+}
+
+.red.active {
+  background-color: red;
+}
+
+.yellow.active {
+  background-color: yellow;
+}
+
+.green.active {
+  background-color: green;
+}
+
+.stop {
+  font-size: 50px;
+  color: red;
+}
+.ready {
+  color: yellow;
+  font-size: 70px;
+}
+.go {
+  color: green;
+  font-size: 100px;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}

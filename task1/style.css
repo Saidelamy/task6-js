@@ -1,0 +1,29 @@
+input,
+button {
+  padding: 20px;
+  font-size: 15px;
+  display: block;
+  margin: 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+button {
+  border: 0;
+  cursor: pointer;
+}
+.group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.table {
+  width: 100%;
+  text-align: center;
+}
+th,
+td {
+  padding: 10px 20px 30px 40px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Validator Game</h1>
+    <div class="group">
+      <div class="inputScope">
+        <label for="textInput">Name</label>
+        <input type="text" id="textInput" name="text" />
+      </div>
+      <!-- handle error text input -->
+      <p id="textInputError">Name is Required</p>
+      <div class="inputScope">
+        <label for="emailInput">Email</label>
+        <input type="email" id="emailInput" name="email" />
+      </div>
+      <!-- handle error email input -->
+      <p id="emailInputError">Email is not valid</p>
+      <div class="inputScope">
+        <label for="passwordInput">Password</label>
+        <input type="password" id="passwordInput" name="password" />
+      </div>
+      <!-- handle error password input -->
+      <p id="passwordInputError">password must be 8 chars at least</p>
+    </div>
+
+    <div class="radioBtns">
+      <p>Gender</p>
+      <div>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">male</label>
+      </div>
+      <div>
+        <input type="radio" id="feMale" name="gender" value="female" />
+        <label for="male">female</label>
+      </div>
+      <!-- handle error radio input -->
+      <p id="redioInputError">Please Choose Your Gender</p>
+    </div>
+
+    <div class="checkBtns">
+      <p>Sports</p>
+      <div>
+        <input type="checkbox" name="tennis" id="tennis" value="tennis" />
+        <label for="tennis">Tennis</label>
+      </div>
+      <div>
+        <input type="checkbox" name="running" id="running" value="running" />
+        <label for="running">Running</label>
+      </div>
+      <div>
+        <input type="checkbox" name="football" id="football" value="football" />
+        <label for="football">Football</label>
+      </div>
+      <!-- handle error checkbox input -->
+      <p id="checkboxInputError">Please Choose at least two fav sports</p>
+    </div>
+
+    <div class="select">
+      <p>Country</p>
+      <select name="" id="CountrySelect">
+        <option value="0">Select Your country</option>
+        <option value="eg">Egypt</option>
+        <option value="sd">Sudi Arebia</option>
+        <option value="lo">London</option>
+        <option value="mor">Moroco</option>
+        <option value="ger">Germany</option>
+      </select>
+      <!-- handle error checkbox input -->
+    </div>
+    <p id="selectError">Please Choose your country</p>
+
+    <div class="btns">
+      <button id="submit" onclick="submit(event)">Submit</button>
+      <button id="reset">Reset</button>
+    </div>
+    <script src="/task3/index.js"></script>
+  </body>
+</html>
