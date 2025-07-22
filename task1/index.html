@@ -8,38 +8,46 @@
   </head>
   <body>
     <div class="group">
-      <input
-        id="btn1"
-        type="text"
-        placeholder="Enter your Name"
-        name="Your Name"
-      />
-      <input
-        id="btn2"
-        type="text"
-        placeholder="Enter Your Age"
-        name="Your Age"
-      />
-      <button>Add Student</button>
+      <div class="inputField">
+        <input
+          id="input1"
+          type="text"
+          placeholder="Enter your Name"
+          name="Your Name"
+        />
+        <div class="pError">
+          <p class="pNameError">Field name is Requires</p>
+          <p class="pNameLengthError">Name Length Must greater than 3</p>
+        </div>
+      </div>
+      <div>
+        <input
+          id="input2"
+          type="text"
+          placeholder="Enter Your Age"
+          name="Your Age"
+        />
+        <div class="pError">
+          <p class="pAgeError">Field Age is Requires</p>
+          <p class="pAgeLengthError">Age Must be greater than 18</p>
+          <p class="pAgeTextError">Age Must be a number</p>
+        </div>
+      </div>
+      <p id="paraghraph">the same data aleredy exist</p>
+      <button id="btn" onclick="submit(event)" type="submit">
+        Add Student
+      </button>
     </div>
-    <table class="table">
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Actions</th>
-      </tr>
-      <tr>
-        <td>Emil</td>
-        <td>Tobias</td>
-        <td>Linus</td>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td>14</td>
-        <td>10</td>
-      </tr>
+    <table class="table" border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
     </table>
-    <script src="/index.js"></script>
+    <script src="/task1/index.js"></script>
   </body>
 </html>

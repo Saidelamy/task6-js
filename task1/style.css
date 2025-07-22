@@ -1,9 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  margin: auto;
+}
 input,
 button {
+  width: 100%;
   padding: 20px;
   font-size: 15px;
   display: block;
-  margin: 15px;
+  margin: 10px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -18,12 +25,35 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-.table {
   width: 100%;
-  text-align: center;
 }
+.pError {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 th,
 td {
-  padding: 10px 20px 30px 40px;
+  padding: 20px;
+}
+
+.pNameError,
+.pNameLengthError,
+.pAgeError,
+.pAgeLengthError,
+.pAgeTextError {
+  display: none;
+  color: red;
+  font-weight: 900;
+}
+
+.table {
+  display: none;
+}
+
+p {
+  font-size: 25px;
+  color: red;
+  display: none;
 }
